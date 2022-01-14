@@ -1,0 +1,28 @@
+# import pygame module
+import pygame
+from pygame import Color
+from pygame import Rect
+from pygame import draw
+
+# initializes pygame module
+pygame.init()
+
+# creates a canvas/tuple with specified size
+# inner brackets are needed!
+gameDisplay = pygame.display.set_mode((500, 500))
+
+
+gameDisplay.fill(Color('lightblue'))
+
+
+# draw red rectangle
+draw.rect(gameDisplay, Color('brown'), Rect(100, 200, 300, 200))
+
+# updates entire canvas
+# does the same as: pygame.display.flip()
+pygame.display.update()
+
+# uninitializes pygame module
+#pygame.quit()
+# exit out of python
+#quit()
